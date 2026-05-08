@@ -1,10 +1,6 @@
 # TestGameUnity
 Hier werde ich meine Programmier Fähigkeiten weiteraufbauen und möchte einen 2DSpiel Jump'n Run Programmieren.
 
-
-# Lern-Periode 2
-Name: Daniel Thavarajan
-
 ## Grob-Planung
 Ich werde einen 2D Jump'n Run Programmieren
 
