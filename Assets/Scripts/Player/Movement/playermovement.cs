@@ -1,4 +1,6 @@
+using System;
 using Unity.VisualScripting;
+using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class playermovement : MonoBehaviour
@@ -25,16 +27,8 @@ public class playermovement : MonoBehaviour
     void Update()
     {
         horizontale = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Jump") && isgrounded () || Sprüngeübrig > 0)
-        {
-            rb.linearVelocity = new Vector2 (rb.linearVelocity.x, jumpingpower);
-            Sprüngeübrig--;
-        }
-        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
-        }
         
+        Jump();
         Flip();
     }
 
@@ -42,12 +36,26 @@ public class playermovement : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(horizontale * speed, rb.linearVelocity.y);
     }
-    private bool isgrounded()
+    private bool isgrounded ()
     {
         return Physics2D.OverlapCircle(GroundCheck.position, 0.2f, GroundLayer);
+        Sprüngeübrig++;
+        Console.WriteLine("+1");
     }
     
-   
+   private void Jump()
+    {
+       if (Input.GetButtonDown("Jump") && isgrounded () )
+        {
+            rb.linearVelocity = new Vector2 (rb.linearVelocity.x, jumpingpower);
+            Sprüngeübrig--;
+            Console.WriteLine("-1");
+        }
+        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
+        } 
+    }
 
 
 
