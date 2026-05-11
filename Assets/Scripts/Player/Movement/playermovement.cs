@@ -9,7 +9,7 @@ public class playermovement : MonoBehaviour
     private float speed = 8f;
     private float jumpingpower = 10f;
     private bool guckterrechts = true;
-    private int Sprüngeübrig = 2;
+    private int Sprüngeübrig = 1;
 
     
 
@@ -27,6 +27,11 @@ public class playermovement : MonoBehaviour
     void Update()
     {
         horizontale = Input.GetAxisRaw("Horizontal");
+
+        if (isgrounded())
+        {
+            Sprüngeübrig = 1;
+        }
         
         Jump();
         Flip();
@@ -39,17 +44,15 @@ public class playermovement : MonoBehaviour
     private bool isgrounded ()
     {
         return Physics2D.OverlapCircle(GroundCheck.position, 0.2f, GroundLayer);
-        Sprüngeübrig++;
-        Console.WriteLine("+1");
     }
     
    private void Jump()
     {
-       if (Input.GetButtonDown("Jump") && isgrounded () )
+       if (Input.GetButtonDown("Jump") && (isgrounded () || Sprüngeübrig > 0))
         {
             rb.linearVelocity = new Vector2 (rb.linearVelocity.x, jumpingpower);
             Sprüngeübrig--;
-            Console.WriteLine("-1");
+            Debug.Log("Sprunge Übrig: " + Sprüngeübrig);
         }
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
         {
