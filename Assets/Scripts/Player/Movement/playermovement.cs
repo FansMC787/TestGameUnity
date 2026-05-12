@@ -7,7 +7,7 @@ public class playermovement : MonoBehaviour
 {
     private float horizontale;
     private float speed = 8f;
-    private float jumpingpower = 10f;
+    private float jumpingpower = 8f;
     private bool guckterrechts = true;
     private int Sprüngeübrig = 1;
 
@@ -34,6 +34,7 @@ public class playermovement : MonoBehaviour
         }
         
         Jump();
+       
         Flip();
     }
 
@@ -58,6 +59,7 @@ public class playermovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         } 
+       
     }
 
 
