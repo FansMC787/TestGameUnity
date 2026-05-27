@@ -17,7 +17,7 @@ Ich möchte meine Programmier Fähigkeiten festigen und verbessern und Sprites e
 3.Einen Test level erstellen
 
 # Fazit
-
+Die Kamera ist fertig. Ich werde morgen mehr mich um die animationen konzentrieren, das es eine animation beim laufen und beim springen geht. Und das es auch wie heute geplant ein sound macht.
 
 ## 12.5.2026
 # Meine Ziele
