@@ -17,7 +17,6 @@ public class playermovement : MonoBehaviour
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform GroundCheck;
-    [SerializeField] private Transform Doublejump;
     [SerializeField] private LayerMask GroundLayer;
     
 
