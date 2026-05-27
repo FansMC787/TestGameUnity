@@ -10,6 +10,15 @@ Ich möchte Unity benutzen und Libresprites.
 ### Generelle Ziele
 Ich möchte meine Programmier Fähigkeiten festigen und verbessern und Sprites erstellen.
 
+## 27.5.2026
+# Meine Ziele
+1.Kamera soll den spieler Verfolgen
+2.Sounds einfügen (z.b jumpsound)
+3.Einen Test level erstellen
+
+# Fazit
+
+
 ## 12.5.2026
 # Meine Ziele
 1.Mein Github Dokumentation weiterführen.
