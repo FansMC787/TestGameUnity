@@ -2,6 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEditor.Build.Content;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class playermovement : MonoBehaviour
 {
@@ -10,14 +11,18 @@ public class playermovement : MonoBehaviour
     private float jumpingpower = 8f;
     private bool guckterrechts = true;
     private int Sprüngeübrig = 1;
-
-    
+    private int Dashcounter = 1;
+    private float Dashpower = 20f;
+    private float dashTimer;
+    private void OnEnable() => sprintAction.Enable();
+    private void OnDisable() => sprintAction.Disable();
 
     
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private LayerMask GroundLayer;
+    [SerializeField] private InputAction sprintAction;
     
 
    
@@ -30,22 +35,43 @@ public class playermovement : MonoBehaviour
         if (isgrounded())
         {
             Sprüngeübrig = 1;
+            
         }
+
         
+        if (isgrounded())
+        {
+            Dashcounter = 1;
+            
+        }
         Jump();
-       
+        Dash();
         Flip();
     }
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(horizontale * speed, rb.linearVelocity.y);
+        Timer();
     }
     private bool isgrounded ()
     {
         return Physics2D.OverlapCircle(GroundCheck.position, 0.2f, GroundLayer);
     }
     
+    private void Dash()
+    {
+       if (sprintAction.WasPressedThisFrame() && (isgrounded () || Dashcounter > 0))
+        {
+            rb.linearVelocity = new Vector2 (horizontale * Dashpower, rb.linearVelocity.y);
+            dashTimer = 0.2f;
+            Dashcounter--;
+            Debug.Log("Dash erkannt");
+        }
+    
+    }
+
+
+
    private void Jump()
     {
        if (Input.GetButtonDown("Jump") && (isgrounded () || Sprüngeübrig > 0))
@@ -61,6 +87,19 @@ public class playermovement : MonoBehaviour
        
     }
 
+private void Timer()
+    {
+        if (dashTimer > 0)
+    {
+        
+        dashTimer -= Time.fixedDeltaTime;
+    }
+    else
+    {
+        
+        rb.linearVelocity = new Vector2(horizontale * speed, rb.linearVelocity.y);
+    }
+    }
 
 
     private void Flip()
