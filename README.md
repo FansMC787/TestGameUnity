@@ -12,12 +12,13 @@ Ich möchte meine Programmier Fähigkeiten festigen und verbessern und Sprites e
 
 ## 28.5.2026
 # Meine Ziele
-1. Eine Demo erstellen.
+1. Eine Musik-Demo erstellen.
 2. Den Test Level weiterbauen.
 3. Die Animationen einbauen.
 
 # Fazit
-
+Eine Musik-demo wurde fertigestellt und habe an einem angefangen zu arbeiten. Ich habe die Dash Funktion eingefügt. Ich bin ganz zufrieden heute.
+Die Animationen, werden in den nächsten tagen angefangen, ich much die sprites dazu noch machen und beim Level muss ich mir überlegen was ich da mache.
 
 ## 27.5.2026
 # Meine Ziele
