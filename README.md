@@ -10,6 +10,15 @@ Ich möchte Unity benutzen und Libresprites.
 ### Generelle Ziele
 Ich möchte meine Programmier Fähigkeiten festigen und verbessern und Sprites erstellen.
 
+## 28.5.2026
+# Meine Ziele
+1. Eine Demo erstellen.
+2. Den Test Level weiterbauen.
+3. Die Animationen einbauen.
+
+# Fazit
+
+
 ## 27.5.2026
 # Meine Ziele
 1.Kamera soll den spieler Verfolgen
