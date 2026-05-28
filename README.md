@@ -12,7 +12,7 @@ Ich möchte meine Programmier Fähigkeiten festigen und verbessern und Sprites e
 
 ## 28.5.2026
 # Meine Ziele
-1. Eine Demo erstellen.
+1. Eine Musik-Demo erstellen.
 2. Den Test Level weiterbauen.
 3. Die Animationen einbauen.
 
