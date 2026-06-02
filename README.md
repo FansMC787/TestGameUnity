@@ -11,10 +11,9 @@ Ich möchte Unity benutzen und Libresprites.
 Ich möchte meine Programmier Fähigkeiten festigen und verbessern und Sprites erstellen.
 
 ## 2.6.2026
-# Meine Ziel
-1. 2.5D Spiel erstellen und die Fortschritte anpassen
-
-# Fazit
+# DAS ENDE
+Ich werde für dieses Projekt beenden, denn mein ich habe die Grundfunktionen gesehen und angewendet. Und möchte mit einem anderen Projekt starten, was viel komplexer, aber auch spannender für mich ist. Mein Programmiert Fähigkeiten zu verbesser ist erreicht und habe auch Musik-Demos erstellt die ich in meinem nächsten Projekt benutzen werde. Ich werde ein 2.5 D spiel machen wie und was man da macht werde ich noch nachdenken, auch wenn es in richtung Zelda gehen sollte und man in einem Dungeon ist. 
+Vielen Dank fürs lesen
 
 
 ## 28.5.2026
