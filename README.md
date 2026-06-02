@@ -10,6 +10,13 @@ Ich möchte Unity benutzen und Libresprites.
 ### Generelle Ziele
 Ich möchte meine Programmier Fähigkeiten festigen und verbessern und Sprites erstellen.
 
+## 2.6.2026
+# Meine Ziel
+1. 2.5D Spiel erstellen und die Fortschritte anpassen
+
+# Fazit
+
+
 ## 28.5.2026
 # Meine Ziele
 1. Eine Musik-Demo erstellen.
